@@ -13,8 +13,6 @@
     /* overflow: hidden; */
 }
 body {
-    background: dodgerblue;
-    height: 500vh;
 }
 header {
     width: 100%;
@@ -122,3 +120,71 @@ header nav ul li a.active {
     font-size: 22px;
 }
 /* End of navigation */
+/* Cover */
+.cover {
+    position: relative;
+    background-color: #000;
+  }
+  
+  .cover img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.6;
+  }
+  
+  .cover-content {
+    position: absolute;
+    width: 60%;
+    top: 20%;
+    left: 10%;
+    /* transform: translate(-50%, -50%); */
+    text-align: left;
+    color: white;
+    line-height: 30px;
+  }
+  
+  .cover-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .cover-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 35px;
+  }
+  
+  .cover-content button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color:transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .cover img {
+      height: auto;
+      max-height: 300px;
+      width: 100%;
+      object-fit: cover;
+    }
+  
+    .cover-content h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    .cover-content h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  
+    .cover-content button {
+      font-size: 14px;
+    }
+  }
+/* End of cover */
