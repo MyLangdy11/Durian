@@ -2,6 +2,14 @@
     font-family: logofont;
     src: url(fonts/Kh\ Ang\ Ktomp.ttf);
   }
+@font-face {
+    font-family: title;
+    src: url(fonts/fortitle.ttf);
+}
+@font-face {
+    font-family: subtitle;
+    src: url(fonts/forsubtitle.ttf);
+}
   
  
 * {
@@ -128,8 +136,9 @@ header nav ul li a.active {
   
   .cover img {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 100%;
+    max-height: 80vh;
+    object-fit: fill;
     opacity: 0.6;
   }
   
@@ -166,25 +175,36 @@ header nav ul li a.active {
   }
   
   @media only screen and (max-width: 767px) {
+    .container-header{
+        opacity: 1;
+    }
     .cover img {
       height: auto;
-      max-height: 300px;
+      max-height: 180px;
       width: 100%;
-      object-fit: cover;
+      object-fit: fill;
     }
-  
     .cover-content h1 {
-      font-size: 24px;
+      font-size: 20px;
       margin-bottom: 10px;
+      line-height: 8px;
     }
   
     .cover-content h2 {
-      font-size: 18px;
-      margin-bottom: 10px;
+      font-size: 13px;
+      margin-bottom:5px;
+      line-height: 20px;
     }
   
     .cover-content button {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
+  .cov-title{
+    font-family: title;
+  }
+  .cov-subtitle,.button{
+    font-family: subtitle;
+  }
+
 /* End of cover */
