@@ -27,6 +27,9 @@
     box-sizing: border-box;
     /* overflow: hidden; */
 }
+body{
+  font-family: 'title';
+}
 header {
     width: 100%;
     color: var(--logo-color);
@@ -269,13 +272,41 @@ nav ul{
  .btn {
     width: 100%;
     text-align: center;
-    border: none;
+    /* border: none; */
     display: flex;
     font-size: 1rem;
     font-weight: bold;
-    color: white;
+    color: var(--logo-color);
+    border:3px solid var(--clr-gray);
     padding: 1rem;
-    background-color: var(--clr-primary);
+    background-color: transparent;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
   }
   
 /* End grid of content */
+table{
+  margin: auto;
+  width: 90%;
+  justify-content: center;
+  text-align: center;
+}
+table tbody tr{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+table tbody td{
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border:3px solid var(--sublogo-color);
+  margin-left: -3px;
+}
+table tbody td img{
+  width: 50px;
+  background-color: var(--clr-primary);
+  border-radius: 100%;
+}
