@@ -1,14 +1,14 @@
 @font-face {
-    font-family: logofont;
+    font-family: 'logofont';
     src: url(fonts/Kh\ Ang\ Ktomp.ttf);
   }
 @font-face {
-    font-family: title;
-    src: url(fonts/fortitle.ttf);
+    font-family: 'title';
+    src: url(fonts/AKbalthom\ KhmerNew.ttf);
 }
 @font-face {
-    font-family: subtitle;
-    src: url(fonts/forsubtitle.ttf);
+    font-family: 'subtitle';
+    src: url(fonts/Kh\ KAKADA\ 27\ Feb..ttf);
 }
   
  
